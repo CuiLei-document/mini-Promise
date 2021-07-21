@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="./promise.js"></script>
+    <script>
+
+        let p = new Promise((resolve,reject)=>{
+            resolve('成功')
+            console.log(111)
+        })
+        p.then(val=>{
+            console.log(222)
+        }).then(val=>{
+            console.log(333)
+        })
+        console.log(444)
+    </script>
+</body>
+
+</html>
